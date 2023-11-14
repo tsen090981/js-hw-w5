@@ -77,7 +77,7 @@
                 </div>
             </li>
             `;s+=a,f.innerHTML=s,e+=1,k.textContent=`本次搜尋共 ${e} 筆資料`}}),s==""&&(f.innerHTML=s,y.innerHTML=`<h3>查無此關鍵字資料</h3>
-        <img src="/assets/images/no_found.png" alt="">`,k.textContent=`本次搜尋共 ${e} 筆資料`)});H.addEventListener("click",function(i){if(c.value==""||n.value==""||o.value==""||m.value==""||u.value==""||d.value==""||p.value=="")C(),c.value==""&&(l[0].innerHTML=`
+        <img src="../assets/images/no_found.png" alt="">`,k.textContent=`本次搜尋共 ${e} 筆資料`)});H.addEventListener("click",function(i){if(c.value==""||n.value==""||o.value==""||m.value==""||u.value==""||d.value==""||p.value=="")C(),c.value==""&&(l[0].innerHTML=`
             <p>
             <span class="material-symbols-rounded material-symbols-rounded-fill">
                 error
