@@ -172,7 +172,7 @@ searchArea.addEventListener("change",function(e){
     if(str == ""){
         ticketCardArea.innerHTML = str;
         cantFindArea.innerHTML = `<h3>查無此關鍵字資料</h3>
-        <img src="/assets/images/no_found.png" alt="">`;
+        <img src="../assets/images/no_found.png" alt="">`;
         totalNum.textContent = `本次搜尋共 ${tatalCount} 筆資料`; 
     };
 });
