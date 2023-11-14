@@ -179,6 +179,7 @@ searchArea.addEventListener("change",function(e){
 
 //新增卡片
 addTicketBtn.addEventListener("click",function(e){
+    cantFindArea.classList.remove("display-block");
     if(ticketName.value == "" || ticketImgUrl.value == "" || ticketRegion.value == "" || ticketDescription.value == "" || ticketNum.value == "" || ticketPrice.value == "" || ticketRate.value == ""){
         innerHtmlClean();
         if(ticketName.value == ""){
