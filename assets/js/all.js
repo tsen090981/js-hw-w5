@@ -97,7 +97,7 @@ init();
 
 //篩選器邏輯
 searchArea.addEventListener("change",function(e){
-    cantFindArea.innerHTML = ``;
+    cantFindArea.classList.add("display-none");
     let tatalCount = 0;
     let str = "";
     data.forEach(function(item,index){
@@ -171,8 +171,8 @@ searchArea.addEventListener("change",function(e){
     });
     if(str == ""){
         ticketCardArea.innerHTML = str;
-        cantFindArea.innerHTML = `<h3>查無此關鍵字資料</h3>
-        <img src="../assets/images/no_found.png" alt="">`;
+        cantFindArea.classList.remove("display-none");
+        console.log(cantFindArea.classList);
         totalNum.textContent = `本次搜尋共 ${tatalCount} 筆資料`; 
     };
 });
