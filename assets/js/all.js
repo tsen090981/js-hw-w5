@@ -97,7 +97,7 @@ init();
 
 //篩選器邏輯
 searchArea.addEventListener("change",function(e){
-    cantFindArea.classList.add("display-none");
+    cantFindArea.classList.remove("display-block");
     let tatalCount = 0;
     let str = "";
     data.forEach(function(item,index){
@@ -171,13 +171,13 @@ searchArea.addEventListener("change",function(e){
     });
     if(str == ""){
         ticketCardArea.innerHTML = str;
-        cantFindArea.classList.remove("display-none");
+        cantFindArea.classList.add("display-block");
         console.log(cantFindArea.classList);
         totalNum.textContent = `本次搜尋共 ${tatalCount} 筆資料`; 
     };
 });
 
-
+//新增卡片
 addTicketBtn.addEventListener("click",function(e){
     if(ticketName.value == "" || ticketImgUrl.value == "" || ticketRegion.value == "" || ticketDescription.value == "" || ticketNum.value == "" || ticketPrice.value == "" || ticketRate.value == ""){
         innerHtmlClean();
@@ -279,6 +279,8 @@ addTicketBtn.addEventListener("click",function(e){
         ticketNum.value = "";
         ticketPrice.value = "";
         ticketRate.value = "";
+        totalNum.textContent = ``;
+        regionSearch.value = "地區搜尋";
     };
 });
 

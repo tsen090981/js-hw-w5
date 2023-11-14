@@ -349,10 +349,11 @@ section.main-content{
            }
         }
     }
-    .display-none{
-        display: none;
+    .cantFind-area.display-block{
+        display: block;
     }
     .cantFind-area{
+        display: none;
         font-weight: bold;
         font-size: 1.5rem;
         color: $primary-color;
